@@ -5,15 +5,17 @@ import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RestController;
 
 import jar.dto.SumDto;
+import jar.dto.Sumdto;
 
 @RestController
 public class Sum {
 
-    @GetMapping("/sum/{a}/{b}")
-    public SumDto sum(
-            @PathVariable int a,
-            @PathVariable int b) {
+    @GetMapping("/sum/{a}")
+    public Sumdto sum(
+            @PathVariable int a) {
 
-        return new SumDto(a, b);
+        Sumdto obj = new Sumdto();
+        obj.setS(a);
+        return obj;
     }
 }
