@@ -24,6 +24,7 @@ public class Math {
         res.put("name", "maths api");
         res.put("status", 200);
         res.put("number", n);
+        res.put("github", "https://github.com/vikramdev772/aimlef");
         res.put("arr[]", arr);
 
         return res;
