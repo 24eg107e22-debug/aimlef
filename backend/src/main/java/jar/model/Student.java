@@ -17,4 +17,29 @@ public class Student {
     String email;
     String ip;
 
+    public String getName() {
+        return name;
+
+    }
+
+    public void setName(String n) {
+        this.name = n;
+    }
+
+    public String getEmail() {
+        return email;
+    }
+
+    public void setEmail(String e) {
+        this.email = e;
+    }
+
+    public String getIp() {
+        return ip;
+    }
+
+    public void setIp(String i) {
+        this.ip = i;
+    }
+
 }
